@@ -1,38 +1,72 @@
 .App {
   text-align: center;
+  font-family: sans-serif;
+  padding: 50px 0;
+  margin: 0;
+  background-color: rgba(62, 219, 224, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 3em;
+  color: rgb(11, 26, 53);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contact-list {
+  padding: 0 20%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contact-details {
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px 20px;
+  border-radius: 5px;
+  height: 250px;
+  background-color: rgba(11, 26, 53, 0.2);
+}
+
+.contact-details img {
+  width: 100px;
+  border-radius: 5px;
+}
+
+.element {
+  text-align: center;
+  width: 100px;
+}
+
+.btn-container {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  height: 80px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(2, 173, 179, 0.541);
+  color: rgb(13, 34, 61);
+  font-size: 1em;
+  font-weight: 800;
+  margin: 30px;
+  transition: 0.2s ease-in;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete-btn {
+  height: 40px;
+  width: 80px;
+  background-color: darkred;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.btn:hover {
+  background-color: rgb(11, 26, 53);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.btn:active {
+  transform: translateY(3px);
+  transition: 0.05s ease-in;
 }
